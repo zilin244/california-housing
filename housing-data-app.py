@@ -45,7 +45,7 @@ st.map(df)
 
 # show the plot
 st.subheader('A Histogram of The Median House Value')
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(8,7))
 # df.median_house_value.plot(kind='hist', bins=30)
 plt.hist(df['median_house_value'], bins=30, edgecolor='none')
 st.pyplot(fig)
